@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 
 export default function AboutPage() {
   return (
-    <main className="relative w-full text-white">
+    <main className="relative w-full min-h-screen text-white">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full z-20">
         <Navbar />
@@ -12,22 +12,19 @@ export default function AboutPage() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/portimg2.jpg" // Change this to your actual background image
+          src="/portimg2.jpg" // Ensure this image exists in `public/`
           fill
           className="object-cover opacity-70"
           alt="Background"
         />
       </div>
 
-      <h1 className="relative text-5xl font-bold text-center mb-6 z-10">
-        About Me
-      </h1>
-
-      <div className="relative flex flex-col lg:flex-row items-center gap-12 z-10">
-        {/* Left - Image */}
+      {/* Content */}
+      <div className="relative flex flex-col lg:flex-row items-center justify-center min-h-screen px-6 bg-black/50 z-10">
+        {/* Left - Profile Image */}
         <div className="lg:w-1/2">
           <Image
-            src="/about-me.jpg" // Change this to your actual image
+            src="/portim1.jpg" // Replace this with an actual profile picture
             width={500}
             height={500}
             alt="Chidi Onyekwere"
@@ -36,13 +33,13 @@ export default function AboutPage() {
         </div>
 
         {/* Right - Text Content */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-5xl font-bold mb-4">About Me</h1>
           <p className="text-lg leading-relaxed">
             Hi, I am <span className="font-semibold">Chidi Onyekwere</span>, a
-            passionate
+            passionate{" "}
             <span className="text-blue-400 font-semibold">
-              {" "}
-              Front-End Developer{" "}
+              Front-End Developer
             </span>{" "}
             and
             <span className="text-blue-400 font-semibold"> Figma Designer</span>
@@ -69,7 +66,7 @@ export default function AboutPage() {
               {" "}
               Project Manager
             </span>{" "}
-            and{" "}
+            and
             <span className="text-blue-400 font-semibold">
               {" "}
               Social Media Manager
