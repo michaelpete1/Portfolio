@@ -13,7 +13,7 @@ export default function Home() {
       {/* Background Image Section */}
       <section className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         <Image
-          src="/portbcgnd2.jpg" // Change this to your actual image
+          src="/portbcgnd2.jpg"
           fill
           className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
           alt="Background"
@@ -21,21 +21,23 @@ export default function Home() {
 
         {/* Overlay Content */}
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl font-bold mb-4">Welcome to OnyekwereC</h1>
+          <h1 className="text-5xl font-bold mb-4">
+            Welcome to OnyekwereC portfolio site
+          </h1>
           <p className="text-lg text-gray-300 max-w-lg mx-auto">
-            Explore our collection of premium fashion and electronics.
+            Get to know me .
           </p>
 
           {/* Buttons */}
           <div className="mt-6 flex space-x-4">
             <Link
-              href="/shop"
+              href="/Projects"
               className="bg-blue-600 px-6 py-3 rounded-md text-white font-medium hover:bg-blue-700 transition"
             >
-              Explore Shop
+              Explore Projects
             </Link>
             <Link
-              href="/about"
+              href="/About"
               className="border border-white px-6 py-3 rounded-md text-white font-medium hover:bg-white hover:text-black transition"
             >
               Learn More
