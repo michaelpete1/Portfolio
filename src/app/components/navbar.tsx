@@ -34,7 +34,7 @@ export default function Navbar() {
           Home
         </Link>
         <Link
-          href="/Projects"
+          href="/Projec"
           className="text-white text-2xl hover:text-gray-400"
           onClick={() => setIsOpen(false)}
         >
