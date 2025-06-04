@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import styles from "./navbar.module.css";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
