@@ -22,6 +22,17 @@ const projects = [
     url: "https://freemedia.vercel.app/",
     imageSrc: "/freemedia.jpg",
   },
+    {
+    name: "Accountant site",
+    url: "https://accountant-pro.vercel.app/",
+    imageSrc: "/accountant.jpg",
+  },
+   {
+    name: "4nis site",
+    url: "https://4nis.vercel.app/", 
+    imageSrc: "/4nisport.jpg",
+  },
+ 
 ];
 
 // Tailwind delay classes for stagger animation
