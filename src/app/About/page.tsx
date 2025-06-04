@@ -13,24 +13,13 @@ export default function AboutPage() {
         <Navbar />
       </div>
 
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/port2.jpg"
-          alt="Background"
-          fill
-          className="object-cover opacity-60"
-          priority
-        />
-      </div>
-
       {/* Content */}
       <section className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-screen px-6 md:px-16 bg-black/60 backdrop-blur-sm">
         {/* Profile Image */}
         <div className="lg:w-1/2 mb-10 lg:mb-0 flex justify-center items-center animate-fade-in-up duration-1000 delay-200">
           <div className="rounded-xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-500">
             <Image
-              src="/Port.jpg"
+              src="/accnt3.png"
               width={400}
               height={400}
               alt="Chidi Onyekwere"
