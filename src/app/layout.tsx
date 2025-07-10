@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./components/navbar"; // Ensure Navbar is included
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className="bg-gray-100">
+      <body className="bg-gray-100 font-sans antialiased">
         {/* Navbar is included */}
         <Navbar />
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         >
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

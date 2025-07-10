@@ -31,13 +31,13 @@ export default function AboutPage() {
 
         {/* Text Content */}
         <div className="lg:w-1/2 space-y-6 animate-fade-in-up duration-1000 delay-500 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-2 animate-bounce-in text-blue-700 drop-shadow-lg">
             About Me
           </h1>
 
           <p className="text-lg leading-relaxed">
             Hi, I am{" "}
-            <span className="font-semibold text-teal-400 animate-pulse">
+            <span className="font-semibold text-teal-400 animate-wiggle">
               Chidi Onyekwere
             </span>
             , a creative{" "}
@@ -88,8 +88,12 @@ export default function AboutPage() {
               </li>
             </ul>
           </div>
+          <p className="text-base text-blue-200 mt-8 animate-fade-in-up">
+            Every journey is unique—thank you for being part of mine. Let's keep building, learning, and inspiring each other!
+          </p>
         </div>
       </section>
+      <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-gradient-to-tr from-blue-400 to-teal-300 shadow-lg animate-spin-slow z-20" />
     </main>
   );
 }

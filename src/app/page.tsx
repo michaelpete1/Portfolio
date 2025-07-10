@@ -43,7 +43,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="relative z-10 text-center px-6"
         >
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-5xl font-bold mb-4 animate-bounce-in drop-shadow-lg text-blue-700">
             Welcome to OnyekwereC portfolio site
           </h1>
           <p className="text-lg text-gray-300 max-w-lg mx-auto">Get to know me.</p>
@@ -56,18 +56,19 @@ export default function Home() {
           >
             <Link
               href="/Projectspage"
-              className="bg-blue-600 px-6 py-3 rounded-md text-white font-medium hover:bg-blue-700 transition-transform transform hover:scale-105"
+              className="bg-gradient-to-r from-blue-600 to-teal-400 px-6 py-3 rounded-md text-white font-medium shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-teal-500 transition-transform transform hover:scale-105 animate-wiggle"
             >
               Explore Projects
             </Link>
             <Link
               href="/About"
-              className="border border-white px-6 py-3 rounded-md text-white font-medium hover:bg-white hover:text-black transition-transform transform hover:scale-105"
+              className="border border-blue-600 px-6 py-3 rounded-md text-blue-700 font-medium bg-white hover:bg-blue-600 hover:text-white transition-transform transform hover:scale-105"
             >
               Learn More
             </Link>
           </motion.div>
         </motion.div>
+        <div className="absolute top-8 right-8 w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-teal-300 shadow-lg animate-spin-slow z-20" />
       </section>
 
       {/* Beauty Section */}
